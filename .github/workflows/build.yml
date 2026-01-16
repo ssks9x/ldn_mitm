@@ -16,19 +16,19 @@ jobs:
           cmd: make -j8
 
       - name: Upload built files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sdcard
           path: out/sd
 
       - name: Upload elf file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ldn_mitm.elf
           path: ldn_mitm/ldn_mitm.elf
 
       - name: Upload elf file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ldn_mitm.elf
           path: overlay/overlay.elf
